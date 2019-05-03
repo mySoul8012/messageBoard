@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../img/font/iconfont.eot');
+    src: url('../img/font/iconfont.eot') format('embedded-opentype'),
+    url("../img/font/iconfont.woff") format('woff'),
+    url('../img/font/iconfont.ttf') format('truetype'),
+    url('../img/font/iconfont.svg#iconfont') format('svg');
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color:#5e5e5e;
+}
+
+body{
+    font-family: "微软雅黑", serif;
+    color:#14191e;
+}
+
+.main{
+    width: 1200px;
+    height: 460px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/*底块 轮播图*/
+.plot{
+    width:1200px;
+    height: 460px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.plot .plot-side{
+    width:1200px;
+    height: 460px;
+}
+
+.plot .side1{
+    background-image: url("../img/bg1.jpg");
+    display: none;
+}
+
+.plot .side2{
+    background-image: url("../img/bg2.jpg");
+    display: none;
+}
+
+.plot .side3{
+    background-image: url("../img/bg3.jpg");
+    display: none;
+}
+
+.menu{
+
+}
+
+/*菜单*/
+.menu-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 244px;
+    height: 460px;
+    background-color: #000000;
+    opacity: 0.2;
+}
+
+.menu-left div{
+    height: 64px;
+    font-size: 16px;
+    padding: 0 24px;
+}
+
+.menu-left div a{
+    display:block;
+    color:#fff;
+    padding:0 8px;
+    height: 63px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+}
+
+.menu-left div a span{
+    line-height: 66px;
+}
+
+.menu-left div a i {
+    position: absolute;
+    right: 30px;
+    line-height: 66px;
+    font-family: "iconfont";
+}
+
+
+
+/*菜单内容*/
+.menu-left-content {
+    position: absolute;
+    left: 244px;
+    top: 0px;
+    width: 730px;
+    height: 458px;
+    background: #fff;
+    border: 1px solid #d9dde1;
+    box-shadow: 8px 4px 8px 0px rgba(0, 0,0 , 0.1);
+    background-image: url("../img/fe.png");
+    display: none;
+}
+
+.menu-left-content .title{
+    color: #f01414;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: 48px;
+}
+
+.menu-left-content .menu-left-row{
+    margin-bottom: 25px;
+    margin-left: 48px;
+}
+
+.menu .hide{
+    display: none;
+}
+
+/*左右两边引导*/
+.button-left{
+    background: url("../img/arrow.png") center center no-repeat;
+    position: absolute;
+    transform: rotate(180deg);
+    left:244px;
+    top:40%;
+    width: 40px;
+    height: 80px;
+}
+
+.button-left:hover{
+    background-color: #333;
+    opacity: 0.8;
+}
+
+.button-right{
+    background: url("../img/arrow.png") center center no-repeat;
+    position: absolute;
+    transform: rotate(0deg);
+    right:0;
+    top:40%;
+    width: 40px;
+    height: 80px;
+}
+
+.button-right:hover{
+    background-color:#333;
+    opacity: 0.8;
+}
+
+/*小圆点*/
+.dots{
+    position: absolute;
+    bottom: 30px;
+    text-align: right;
+    padding-right: 24px;
+    line-height: 12px;
+    right: 30px;
+}
+
+.dots span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(7, 17, 27, 0.4);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset;
+    display: inline-block;
+    margin-left: 8px;
+    color: #14191e;
+    cursor: pointer;
+}
+
+/*选中情况*/
+.dots span.active{
+    box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
